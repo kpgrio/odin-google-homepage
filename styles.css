@@ -1,0 +1,172 @@
+html, body {
+  height: 100%;
+  font-family: arial, sans-serif;
+}
+
+#container {
+  position: relative;
+  margin: 0 auto;
+  min-height: 100%;
+  min-width: 1139px;
+}
+
+main {
+  display: block;
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 120px;
+}
+
+#search-area {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#search-bar {
+  display: flex;
+  overflow: auto;
+  height: 45px;
+  border: 1px hsl(0, 0%, 87%) solid;
+  border-radius: 24px;
+	margin-bottom: 15px;
+	padding-right: 20px;
+	align-items: center;
+}
+
+search-bar:hover {
+  box-shadow: 0 0 5px rgb(177, 177, 177);
+}
+
+#main-search {
+  padding: 5px 8px 0 20px;
+	width: 550px;
+	line-height: 34px;
+	border: none;
+}
+
+nav, footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  position: fixed;
+  margin-top: 16px;
+  width: 100%;
+}
+
+nav #nav-left {
+  margin-left:10px;
+}
+
+nav #nav-right {
+  margin-right:35px;
+}
+
+footer {
+  position: fixed;
+	bottom: 0;
+	height: 40px;
+	background-color: #f2f2f2;
+	width: 100%;
+}
+
+footer #foot-left {
+  margin-left: 10px;
+}
+
+footer #foot-right {
+  margin-right: 35px;
+}
+
+a {
+	font-size: 13px;
+	color: #222;
+	opacity: 0.85;
+	text-decoration: none;
+}
+
+nav a {
+	padding-left: 15px;
+}
+
+footer a {
+	padding-left: 27px;
+	font-size: 13px;
+}
+
+.text-link:hover {
+	text-decoration: underline;
+}
+
+.button {
+	display: inline-block;
+	opacity: 1;
+}
+
+#search-buttons .button {
+	border: 1px solid #f2f2f2;
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	color: #5F6368;
+	font-size: 14px;
+	margin: 11px 4px;
+	padding: 0 16px;
+	line-height: 33px;
+	height: 40px;
+}
+
+#search-buttons .button:hover {
+	color: #222;
+	border-color: #c6c6c6;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+#search-buttons .button:focus {
+	border: 1px solid #4d90fe;
+}
+
+#right-nav .button {
+	font-weight: bold;
+	line-height: 28px;
+	border: 1px solid #4285f4;
+	border-radius: 2px;
+	padding: 7px 17px;
+	margin-left: 15px;
+	color: #fff;
+	background-color: #4285f4;
+}
+
+#google-logo {
+	position: relative;
+	top: 30px;
+	display: inline-block;
+	transform: scale(0.5);
+}
+
+#google-apps::before {
+	content: "";
+	background-image: url("baseline_apps_black_18dp.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	background-size: 100% 100%;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	opacity: 0.65;
+	transform: scale(0.85);
+}
+
+#google-apps:hover::before {
+	opacity: 1;
+}
+
+#search-bar img {
+  height: 24px;
+  width: 24px;
+}
